@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: center;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+  h2 {text-align: center;}
+  p {text-align: center;}
+
+</style>
+</head>
+<body>
+
+<h2>COVID-19 Predictive Graph</h2>
+<p>Select a state from the dropdown menu.</p>
+
+<h2>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select State</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="">Andaman and Nicobar Islands</a>
+    <a href="">Andhra Pradesh</a>
+    <a href="">Arunachal Pradesh</a>
+     <a href="">Assam</a>
+    <a href="">Bihar</a>
+    <a href="">Chhattisgarh</a>
+    <a href="Delhi.html">Delhi</a>
+     <a href="">Goa</a>
+    <a href="">Gujarat</a>
+    <a href="">Haryana</a>
+     <a href="">Himachal Pradesh</a>
+    <a href="">Jammu and Kashmir</a>
+    <a href="">Jarkhand</a>
+     <a href="Karnataka.html">Karnataka</a>
+    <a href="Kerala.html">Kerala</a>
+    <a href="">Madhya Pradesh</a>
+     <a href="Maharashtra.html">Maharashtra</a>
+    <a href="">Manipur</a>
+    <a href="">Meghalaya</a>
+     <a href="">Mizoram</a>
+    <a href="">Nagalandt</a>
+    <a href="">Odisha</a>
+     <a href="">Punjab</a>
+    <a href="">Rajastan</a>
+    <a href="">Sikkim</a>
+     <a href="">Tamil Nadu</a>
+    <a href="">Telengana</a>
+    <a href="">Tripura</a>
+     <a href="">Uttaranchal</a>
+    <a href="">Uttar Pradesh</a>
+    <a href="">West Bengal</a>
+
+  </div>
+</div>
+</h2>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
